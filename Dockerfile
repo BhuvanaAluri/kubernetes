@@ -1,6 +1,6 @@
 FROM node:19-bullseye
 WORKDIR /app
-COPY package*.json ./
+COPY ./app/package*.json ./
 RUN npm install
 COPY . .
 EXPOSE 3000
